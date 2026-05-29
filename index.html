@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nora Rose Downey – Wikipedia, the free encyclopedia</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; color: #202122; background: #f8f9fa; }
+        a { color: #3366cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        a:visited { color: #6b4ba1; }
+
+        /* ── HEADER ── */
+        #mw-head { background: #fff; border-bottom: 1px solid #a2a9b1; height: 52px; display: flex; align-items: center; padding: 0 16px; gap: 16px; position: sticky; top: 0; z-index: 200; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+        .logo-wrap { display: flex; align-items: center; gap: 8px; min-width: 150px; text-decoration: none; }
+        .logo-text .site-name { font-family: 'Linux Libertine', Georgia, serif; font-size: 19px; color: #000; display: block; }
+        .logo-text .site-tagline { font-size: 10px; color: #54595d; display: block; }
+        .search-bar { display: flex; flex: 1; max-width: 420px; margin: 0 auto; }
+        .search-bar input { flex: 1; padding: 6px 10px; border: 1px solid #a2a9b1; border-right: none; border-radius: 2px 0 0 2px; font-size: 13px; }
+        .search-bar input:focus { outline: none; border-color: #3366cc; }
+        .search-bar button { padding: 6px 12px; background: #f8f9fa; border: 1px solid #a2a9b1; border-radius: 0 2px 2px 0; cursor: pointer; }
+        .search-bar button:hover { background: #e8e8e8; }
+        .head-nav { display: flex; gap: 14px; font-size: 12px; margin-left: auto; }
+
+        /* ── TABS ── */
+        #p-views { background: #f8f9fa; border-bottom: 1px solid #a2a9b1; padding: 0 0 0 158px; display: flex; align-items: flex-end; gap: 2px; }
+        .page-tab { padding: 6px 14px; font-size: 13px; border: 1px solid #a2a9b1; border-bottom: none; border-radius: 2px 2px 0 0; background: #e8e8e8; color: #54595d; cursor: pointer; position: relative; bottom: -1px; }
+        .page-tab.active { background: #fff; color: #202122; border-bottom: 1px solid #fff; }
+        .page-tab a { color: inherit; text-decoration: none; }
+        .tab-spacer { flex: 1; }
+
+        /* ── LAYOUT ── */
+        #main-wrap { display: flex; min-height: calc(100vh - 90px); }
+
+        /* ── SIDEBAR ── */
+        #mw-panel { width: 160px; min-width: 160px; padding: 10px 4px; font-size: 12.5px; }
+        .sidebar-logo { text-align: center; padding: 8px 4px 14px; }
+        .sidebar-logo .sw-name { font-family: 'Linux Libertine', Georgia, serif; font-size: 12px; display: block; margin-top: 4px; }
+        .sidebar-logo .sw-tagline { font-size: 10px; color: #54595d; display: block; }
+        .portal { margin-bottom: 10px; }
+        .portal-heading { background: #cee0f2; font-size: 11px; font-weight: bold; padding: 3px 8px; margin-bottom: 3px; border: 1px solid #a2a9b1; text-transform: uppercase; letter-spacing: 0.4px; }
+        .portal ul { list-style: none; padding: 0 6px; }
+        .portal ul li { padding: 2px 0; border-bottom: 1px solid #f0f0f0; font-size: 12px; }
+
+        /* ── CONTENT ── */
+        #content { flex: 1; background: #fff; border-left: 1px solid #a2a9b1; padding: 18px 28px 40px 18px; min-width: 0; }
+        #firstHeading { font-family: 'Linux Libertine', Georgia, serif; font-size: 28px; font-weight: normal; border-bottom: 1px solid #a2a9b1; padding-bottom: 4px; margin-bottom: 12px; }
+        .mw-body-content { font-family: Georgia, 'Times New Roman', serif; font-size: 14px; line-height: 1.65; }
+        .mw-body-content p { margin-bottom: 0.85em; }
+        .mw-body-content ul { padding-left: 22px; margin-bottom: 0.85em; }
+        .mw-body-content ul li { margin-bottom: 3px; }
+        .mw-body-content h2 { font-family: -apple-system, sans-serif; font-size: 22px; font-weight: normal; border-bottom: 1px solid #a2a9b1; padding-bottom: 4px; margin: 26px 0 8px; }
+        .mw-body-content h3 { font-family: -apple-system, sans-serif; font-size: 16px; font-weight: bold; margin: 18px 0 6px; }
+        .mw-editsection { font-size: 75%; font-weight: normal; margin-left: 0.8em; font-family: sans-serif; }
+        sup.reference { font-size: 75%; line-height: 0; }
+
+        /* ── INFOBOX ── */
+        .infobox { float: right; clear: right; margin: 0 0 1em 1.5em; border: 1px solid #a2a9b1; background: #f8f9fa; font-size: 88%; line-height: 1.5; width: 260px; }
+        .infobox-title { background: #cee0f2; text-align: center; font-size: 108%; font-weight: bold; padding: 6px 8px; font-family: sans-serif; }
+        .infobox-image { text-align: center; padding: 8px; border-bottom: 1px solid #a2a9b1; }
+        .infobox-image img { max-width: 220px; display: block; margin: 0 auto; }
+        .infobox-caption { font-size: 90%; color: #54595d; margin-top: 4px; font-style: italic; font-family: sans-serif; }
+        .infobox table { width: 100%; border-collapse: collapse; }
+        .infobox tr { vertical-align: top; }
+        .infobox th { font-weight: bold; padding: 4px 8px; text-align: left; width: 44%; font-family: sans-serif; }
+        .infobox td { padding: 4px 8px; font-family: sans-serif; }
+        .infobox tr:nth-child(even) { background: #f0f2f4; }
+
+        /* ── TOC ── */
+        #toc { display: inline-block; background: #f8f9fa; border: 1px solid #a2a9b1; padding: 10px 16px 10px 10px; margin: 4px 0 14px; min-width: 240px; font-family: sans-serif; }
+        #toc-header { font-weight: bold; font-size: 94%; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+        #toc-toggle { font-size: 84%; font-weight: normal; color: #3366cc; cursor: pointer; }
+        #toc-list { font-size: 90%; }
+        #toc-list ol { margin: 0; padding-left: 22px; }
+        #toc-list ol li { margin: 3px 0; }
+        #toc-list ol ol { padding-left: 20px; }
+
+        /* ── CAROUSEL ── */
+        .photo-carousel { margin: 22px 0 26px; clear: both; }
+        .carousel-wrapper { background: #eef0f4; border: 1px solid #a2a9b1; padding: 10px; }
+        .carousel-label { font-family: sans-serif; font-size: 11.5px; color: #54595d; font-style: italic; margin-bottom: 8px; }
+        .carousel-inner { display: flex; align-items: center; gap: 6px; }
+        .carousel-viewport { overflow: hidden; flex: 1; min-width: 0; }
+        .carousel-track { display: flex; flex-wrap: nowrap; gap: 8px; transition: transform 0.35s cubic-bezier(.4,0,.2,1); will-change: transform; }
+        .carousel-slide { flex-shrink: 0; cursor: pointer; position: relative; }
+        .carousel-slide::after { content: '🔍'; position: absolute; top: 6px; right: 6px; font-size: 13px; opacity: 0; transition: opacity 0.15s; pointer-events: none; filter: drop-shadow(0 1px 2px rgba(0,0,0,.5)); }
+        .carousel-slide:hover::after { opacity: 0.85; }
+        .photo-slot { background: #d0d5de; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1.5px dashed #9aa4b8; aspect-ratio: 4/3; transition: background 0.15s; padding: 8px; text-align: center; }
+        .carousel-slide:hover .photo-slot { background: #bfc6d4; }
+        .photo-slot .ps-icon { opacity: 0.4; }
+        .photo-slot .ps-num { margin-top: 6px; font-size: 11px; font-weight: bold; color: #5a6070; font-family: sans-serif; }
+        .photo-slot .ps-hint { font-size: 9.5px; color: #8a96a8; font-family: sans-serif; margin-top: 2px; line-height: 1.3; }
+        .carousel-slide img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; border: 1px solid #a2a9b1; }
+        .carousel-btn { background: rgba(30,30,30,.35); color: #fff; border: none; width: 30px; height: 30px; border-radius: 50%; cursor: pointer; font-size: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background .2s; user-select: none; }
+        .carousel-btn:hover { background: rgba(30,30,30,.65); }
+        .carousel-btn:disabled { opacity: .2; cursor: default; }
+        .carousel-footer { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 8px; }
+        .carousel-dots { display: flex; gap: 5px; }
+        .carousel-dot { width: 7px; height: 7px; border-radius: 50%; background: #b0b8c8; cursor: pointer; transition: background .2s; }
+        .carousel-dot.active { background: #3366cc; }
+        .carousel-counter { font-size: 11px; font-family: sans-serif; color: #666; min-width: 48px; text-align: center; }
+
+        /* ── LIGHTBOX ── */
+        #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9999; align-items: center; justify-content: center; gap: 16px; }
+        #lb-backdrop { position: absolute; inset: 0; z-index: 0; cursor: default; }
+        #lb-prev, #lb-next { position: relative; z-index: 1; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18); color: #fff; font-size: 32px; width: 52px; height: 52px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; user-select: none; }
+        #lb-prev:hover, #lb-next:hover { background: rgba(255,255,255,0.25); }
+        #lb-prev:disabled, #lb-next:disabled { opacity: 0.12; cursor: default; }
+        #lb-media { position: relative; z-index: 1; max-width: 78vw; max-height: 85vh; display: flex; align-items: center; justify-content: center; }
+        #lb-img { max-width: 100%; max-height: 85vh; object-fit: contain; display: none; border: 1px solid rgba(255,255,255,0.12); }
+        #lb-placeholder { width: 520px; max-width: 78vw; height: 390px; background: #191c24; border: 2px dashed #384050; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 14px; }
+        #lb-placeholder .lb-ph-icon { opacity: 0.18; }
+        #lb-placeholder .lb-ph-num { color: #6688aa; font-family: sans-serif; font-size: 16px; font-weight: bold; }
+        #lb-placeholder .lb-ph-hint { color: #445566; font-family: sans-serif; font-size: 12px; }
+        #lb-close { position: fixed; top: 14px; right: 20px; background: none; border: none; color: #fff; font-size: 42px; cursor: pointer; opacity: 0.7; z-index: 10000; line-height: 1; padding: 4px 8px; }
+        #lb-close:hover { opacity: 1; }
+        #lb-counter { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.55); font-family: sans-serif; font-size: 13px; z-index: 10000; letter-spacing: 0.4px; }
+
+        /* ── REFERENCES ── */
+        .references { font-size: 90%; columns: 2; column-gap: 20px; font-family: sans-serif; }
+        .references ol { padding-left: 18px; }
+        .references ol li { margin-bottom: 5px; break-inside: avoid; }
+
+        /* ── CATEGORIES ── */
+        #catlinks { border-top: 1px solid #a2a9b1; padding: 10px 0; margin-top: 24px; font-size: 90%; font-family: sans-serif; clear: both; }
+        .mw-normal-catlinks ul { display: inline; list-style: none; padding: 0; margin: 0; }
+        .mw-normal-catlinks ul li { display: inline; }
+        .mw-normal-catlinks ul li::after { content: ' · '; color: #54595d; }
+        .mw-normal-catlinks ul li:last-child::after { content: ''; }
+
+        /* ── FOOTER ── */
+        #footer { background: #f8f9fa; border-top: 1px solid #a2a9b1; padding: 14px 20px 14px 178px; font-size: 12px; color: #54595d; font-family: sans-serif; }
+        #footer ul { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 8px; }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            #mw-panel { display: none; }
+            #content { border-left: none; padding: 14px; }
+            .infobox { width: 100%; float: none; margin: 0 0 1em; }
+            .references { columns: 1; }
+            #footer { padding-left: 20px; }
+            #p-views { padding-left: 10px; }
+            #lb-media { max-width: 92vw; }
+            #lb-placeholder { width: 92vw; height: 69vw; }
+            #lb-prev, #lb-next { width: 38px; height: 38px; font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ══════════════ LIGHTBOX ══════════════ -->
+<div id="lightbox">
+    <div id="lb-backdrop"></div>
+    <button id="lb-prev">&#8249;</button>
+    <div id="lb-media">
+        <img id="lb-img" src="" alt="">
+        <div id="lb-placeholder">
+            <svg class="lb-ph-icon" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.2">
+                <rect x="2" y="6" width="20" height="15" rx="2"/>
+                <circle cx="12" cy="13.5" r="3.5"/>
+                <path d="M8 6V4h8v2"/>
+            </svg>
+            <div class="lb-ph-num"></div>
+            <div class="lb-ph-hint">Replace with &lt;img src="..."&gt;</div>
+        </div>
+    </div>
+    <button id="lb-next">&#8250;</button>
+    <button id="lb-close">&#215;</button>
+    <div id="lb-counter"></div>
+</div>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header id="mw-head">
+    <a class="logo-wrap" href="#">
+        <svg width="40" height="40" viewBox="0 0 50 50">
+            <circle cx="25" cy="25" r="22" fill="white" stroke="#a2a9b1" stroke-width="1.5"/>
+            <ellipse cx="25" cy="25" rx="10" ry="22" fill="none" stroke="#a2a9b1" stroke-width="1.5"/>
+            <line x1="3" y1="25" x2="47" y2="25" stroke="#a2a9b1" stroke-width="1.5"/>
+            <path d="M7 15 Q25 12 43 15" fill="none" stroke="#a2a9b1" stroke-width="1.5"/>
+            <path d="M7 35 Q25 38 43 35" fill="none" stroke="#a2a9b1" stroke-width="1.5"/>
+        </svg>
+        <div class="logo-text">
+            <span class="site-name">Wikipedia</span>
+            <span class="site-tagline">The Free Encyclopedia</span>
+        </div>
+    </a>
+    <div class="search-bar">
+        <input type="text" placeholder="Search Wikipedia">
+        <button>🔍</button>
+    </div>
+    <nav class="head-nav">
+        <a href="#">Create account</a>
+        <a href="#">Log in</a>
+        <a href="#">Donate</a>
+    </nav>
+</header>
+
+<!-- ══════════════ TABS ══════════════ -->
+<div id="p-views">
+    <div class="page-tab active"><a href="#">Article</a></div>
+    <div class="page-tab"><a href="#">Talk</a></div>
+    <div class="tab-spacer"></div>
+    <div class="page-tab"><a href="#">Read</a></div>
+    <div class="page-tab"><a href="#">Edit</a></div>
+    <div class="page-tab"><a href="#">View history</a></div>
+</div>
+
+<!-- ══════════════ MAIN ══════════════ -->
+<div id="main-wrap">
+
+    <!-- SIDEBAR -->
+    <nav id="mw-panel">
+        <div class="sidebar-logo">
+            <svg width="44" height="44" viewBox="0 0 50 50">
+                <circle cx="25" cy="25" r="22" fill="white" stroke="#a2a9b1" stroke-width="1.5"/>
+                <ellipse cx="25" cy="25" rx="10" ry="22" fill="none" stroke="#a2a9b1" stroke-width="1.5"/>
+                <line x1="3" y1="25" x2="47" y2="25" stroke="#a2a9b1" stroke-width="1.5"/>
+                <path d="M7 15 Q25 12 43 15" fill="none" stroke="#a2a9b1" stroke-width="1.5"/>
+                <path d="M7 35 Q25 38 43 35" fill="none" stroke="#a2a9b1" stroke-width="1.5"/>
+            </svg>
+            <span class="sw-name">Wikipedia</span>
+            <span class="sw-tagline">The Free Encyclopedia</span>
+        </div>
+        <div class="portal">
+            <div class="portal-heading">Navigation</div>
+            <ul>
+                <li><a href="#">Main page</a></li>
+                <li><a href="#">Contents</a></li>
+                <li><a href="#">Current events</a></li>
+                <li><a href="#">Random article</a></li>
+                <li><a href="#">About Wikipedia</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="portal">
+            <div class="portal-heading">Contribute</div>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Learn to edit</a></li>
+                <li><a href="#">Community portal</a></li>
+                <li><a href="#">Recent changes</a></li>
+                <li><a href="#">Upload file</a></li>
+            </ul>
+        </div>
+        <div class="portal">
+            <div class="portal-heading">Tools</div>
+            <ul>
+                <li><a href="#">What links here</a></li>
+                <li><a href="#">Related changes</a></li>
+                <li><a href="#">Special pages</a></li>
+                <li><a href="#">Permanent link</a></li>
+                <li><a href="#">Cite this page</a></li>
+            </ul>
+        </div>
+        <div class="portal">
+            <div class="portal-heading">Print/export</div>
+            <ul>
+                <li><a href="#">Download as PDF</a></li>
+                <li><a href="#">Printable version</a></li>
+            </ul>
+        </div>
+        <div class="portal">
+            <div class="portal-heading">Languages</div>
+            <ul>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Français</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">中文</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ══════════════ ARTICLE ══════════════ -->
+    <div id="content">
+        <h1 id="firstHeading">Nora Rose Downey</h1>
+
+        <div class="mw-body-content">
+
+            <!-- INFOBOX -->
+            <table class="infobox">
+                <tr><td colspan="2" class="infobox-title">Nora Rose Downey</td></tr>
+                <tr>
+                    <td colspan="2" class="infobox-image">
+                        <img src="headshot.jpg">
+                        <div class="infobox-caption">Nora Rose Downey, Falmouth, Massachusetts</div>
+                    </td>
+                </tr>
+                <tr><th>Born</th><td>November 26, 1989<br><span style="color:#54595d"><a href="#">Falmouth, Massachusetts</a></span></td></tr>
+                <tr><th>Hometown</th><td><a href="#">Falmouth, Massachusetts</a></td></tr>
+                <tr><th>Occupation</th><td>Senior Project Manager, Navigating Aging and Illness</td></tr>
+                <tr><th>Employer</th><td><a href="#">Ariadne Labs</a></td></tr>
+                <tr><th>Education</th><td>B.A. <a href="#">Anthropology</a>, <a href="#">UMass Amherst</a> (2012)</td></tr>
+                <tr><th>Fields</th><td>Healthcare delivery, geriatrics, communication, human-centered design</td></tr>
+                <tr><th>Known&nbsp;for</th><td>Serious illness &amp; aging research, singing very loud, being A Local</td></tr>
+            </table>
+
+            <!-- ══ INTRODUCTION ══ -->
+            <p>
+                <b>Nora Rose Downey</b> (born November 26, 1989, in <a href="#">Falmouth, Massachusetts</a>) is an American health systems researcher and design strategist. She currently serves as a Project Manager in the Serious Illness Care Program at <a href="#">Ariadne Labs</a>, a joint center for health systems innovation at <a href="#">Brigham and Women's Hospital</a> and the <a href="#">Harvard T.H. Chan School of Public Health</a>, where she focuses on improving the quality of care for patients and families navigating serious illness and aging.
+            </p>
+            <p>
+                A lifelong <a href="#">Cape Codder</a> and proud product of <a href="#">Falmouth Public Schools</a>, Downey's career has been shaped by a deeply personal commitment to elderly and seriously ill individuals — a commitment rooted in her childhood relationships with her four grandparents, and most profoundly in the home <a href="#">hospice</a> death of her maternal grandmother, Frances Marie O'Donnell, in the summer of 2011. That experience redirected Downey's professional trajectory away from international medicine and toward <a href="#">geriatric care</a>, <a href="#">end-of-life care</a>, and hospice, setting the course of a career that has consistently placed human dignity and compassionate presence at its center.
+            </p>
+            <p>
+                Before arriving at Ariadne Labs, Downey built experience across an unusually wide arc of settings: as a microbial genetics technician at the <a href="#">Marine Biological Laboratory</a> in <a href="#">Woods Hole, Massachusetts</a>; as a Clinical Research Coordinator on the <a href="#">Harvard Aging Brain Study</a> at <a href="#">Massachusetts General Hospital</a>; and as an early hire and team manager at Cogniciti, a <a href="#">Toronto</a>-based <a href="#">Alzheimer's disease</a> clinical trial recruitment start-up. Running in parallel to all of it, she spent more than two decades working in the service industry — an experience she credits with cultivating her work ethic, her deep respect for people of all backgrounds, and a particular gift for winning over even the most reluctant of guests.
+            </p>
+            <p>
+                A trained singer, a former practitioner of the Korean meditative practice <a href="#">Kouk Sun Do</a>, and a lifelong, passionate lover of dogs, Downey is guided by the belief that a meaningful life is built through deliberate action, deep community, and fidelity to a core set of values — among them justice, beauty, sustainability, and the primacy of human connection.
+            </p>
+            <p>
+                Downey lives in her hometown of Falmouth, with her dog, Leia, and her roommate, Tim. Outside of work and school, you can find Downey enjoying long walks and short runs on the <a href="#">Shining Sea Bike Path</a> with Leia, singing karaoke, baking sourdough bread, or dancing wherever there is music playing, with her magical boyfriend, Mike.
+            </p>
+
+            <!-- CAROUSEL A -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Falmouth, Leia, Mike, and things Nora loves</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="leia2.jpg"></div>
+                            <div class="carousel-slide"><img src="mike2.jpg"></div>
+                            <div class="carousel-slide"><img src="roses.jpg"></div>
+                            <div class="carousel-slide"><img src="karaoke.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <!-- TOC -->
+            <div id="toc">
+                <div id="toc-header">Contents <span id="toc-toggle">[hide]</span></div>
+                <div id="toc-list">
+                    <ol>
+                        <li><a href="#early-life">Early life</a></li>
+                        <li><a href="#education">Education and professional aspirations</a>
+                            <ol>
+                                <li><a href="#falmouth-schools">Falmouth Public Schools: 1997–2008</a></li>
+                                <li><a href="#umass">UMass Amherst: 2008–2012</a></li>
+                                <li><a href="#south-africa">South Africa: 2011</a></li>
+                                <li><a href="#returning-home">Returning home</a></li>
+                                <li><a href="#south-korea">South Korea: 2013</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#career">Professional career and detours</a>
+                            <ol>
+                                <li><a href="#service-industry">Service industry: 2004–2025</a></li>
+                                <li><a href="#mbl">Marine Biological Laboratory: 2014–2016</a></li>
+                                <li><a href="#habs">Harvard Aging Brain Study: 2016–2018</a></li>
+                                <li><a href="#cogniciti">Cogniciti: 2018–2019</a></li>
+                                <li><a href="#ariadne">Ariadne Labs: 2020–present</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#gems">Professional development: GEMS (2025–2027)</a></li>
+                        <li><a href="#references">References</a></li>
+                        <li><a href="#external-links">External links</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- ══ EARLY LIFE ══ -->
+            <h2 id="early-life">Early life <span class="mw-editsection">[<a href="#">edit</a>]</span></h2>
+
+            <p>
+                Nora Rose Downey was born on November 26, 1989. She is the second of two children born to Mary Frances O'Donnell Downey and Dennis Michael Downey. She is a bonafide local Cape Codder and Falmouth Clipper. To this day she loves the community and natural beauty of her hometown.
+            </p>
+
+            <!-- CAROUSEL 1 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Early childhood — Falmouth, Massachusetts</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="young_bill.jpg"></div>
+                            <div class="carousel-slide"><img src="young_swim.jpg"></div>
+                            <div class="carousel-slide"><img src="parents.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <p>
+                Downey's father is an unpublished writer, and semi-stay-at-home dad. Her mother is a family law attorney. They raised Downey and her brother, Bill, in their maternal grandmother's home in Falmouth, MA. Frances Marie O'Donnell (aka "Grammy," née Buckely; 1918–2011) was like a third parent to her grandchildren and a significant influence on Downey, which extends to her current role working in serious illness care. Downey was also close with her other three grandparents: her maternal grandfather's profession as a social justice attorney and her paternal grandfather's profession as a pediatrician shaped Downey's service orientation (righteousness) and interest in medicine, respectively. While primarily influenced by Grammy, she also became unusually fond of elderly people and nursing homes as it was a routine part of her youth to visit her other three grandparents in long term care facilities, one of whom had mixed dementia and the other, Alzheimer's Disease.
+            </p>
+
+            <!-- CAROUSEL 2 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Family — Grammy, grandparents, and the dogs</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="grammy.jpg"></div>
+                            <div class="carousel-slide"><img src="molly2.jpg"></div>
+                            <div class="carousel-slide"><img src="young_doctor.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <p>
+                When she was young, Downey was obsessed with dogs and aspired to become a singing-dogs-only veterinarian.
+            </p>
+
+            <!-- ══ EDUCATION ══ -->
+            <h2 id="education">Education and professional aspirations <span class="mw-editsection">[<a href="#">edit</a>]</span></h2>
+
+            <h3 id="falmouth-schools">Falmouth Public Schools: 1997–2008 <span class="mw-editsection">[<a href="#">edit</a>]</span></h3>
+            <p>
+                But for a one-year stint in Catholic school, Downey was a product of the Falmouth Public School System. She began her singing career in high school Repertory Singers, and set her professional goals toward becoming a physician for <a href="#">Doctors Without Borders</a>.
+            </p>
+
+            <!-- CAROUSEL 3 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Falmouth Public Schools — Repertory Singers, school years</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="first_grade.jpg"></div>
+                            <div class="carousel-slide"><img src="fhs_fh.jpg"></div>
+                            <div class="carousel-slide"><img src="reps.jpg"></div>
+                            <div class="carousel-slide"><img src="fhs_grad.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <h3 id="umass">UMass Amherst: 2008–2012 <span class="mw-editsection">[<a href="#">edit</a>]</span></h3>
+            <p>
+                Downey received her BA in <a href="#">Anthropology</a> from <a href="#">University of Massachusetts Amherst</a> in 2012. She completed Pre-Med coursework as well as coursework for a Music Minor in Voice, though she didn't graduate with the minor completed because her Music Theory grades would have destroyed her GPA. During summer vacations, Downey would return to her family home to work and began volunteering for hospice, following in Grammy's footsteps.
+            </p>
+
+            <!-- CAROUSEL 4 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 UMass Amherst — campus life, voice performance, hospice volunteering</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="umass_library.jpg"></div>
+                            <div class="carousel-slide"><img src="umass_pin.jpg"></div>
+                            <div class="carousel-slide"><img src="umass_miss.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <h3 id="south-africa">South Africa: 2011 <span class="mw-editsection">[<a href="#">edit</a>]</span></h3>
+            <p>
+                While at UMass, Downey studied abroad with the <a href="#">School of International Training</a>, a homestay and experiential-learning focused program, in <a href="#">Cape Town, South Africa</a>. The program's focus was Multiculturalism and Human Rights, and she focused her independent study on the impact of language in schools on youth identity and power dynamics in society. Downey was obsessed with her study abroad experience and thought she would have to become Paul Farmer 2.0 because she read <i><a href="#">Mountains Beyond Mountains</a></i> right before hiking <a href="#">Lion's Head</a> mountain in Cape Town.
+            </p>
+
+            <!-- CAROUSEL 5 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Cape Town, South Africa — SIT study abroad, Lion's Head, homestay</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="sa_groupshot.jpg"></div>
+                            <div class="carousel-slide"><img src="sa_dancing.jpg"></div>
+                            <div class="carousel-slide"><img src="sa_cheetah.jpg"></div>
+                            <div class="carousel-slide"><img src="sa_jump.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <h3 id="returning-home">Returning home <span class="mw-editsection">[<a href="#">edit</a>]</span></h3>
+            <p>
+                While Downey was studying abroad, Grammy had a stroke. Downey returned from the semester away a few weeks later as her grandmother transitioned to hospice. Along with her mother and other family members, Downey took care of her grandmother at home through the summer. Grammy died peacefully at home in August of 2011. That experience had a profound impact on Downey's professional aspirations. She directed her interests toward working in geriatrics, end-of-life care, and hospice rather than international aid work.
+            </p>
+
+            <h3 id="south-korea">South Korea: 2013 <span class="mw-editsection">[<a href="#">edit</a>]</span></h3>
+            <p>
+                After graduating from college, Downey had accepted a fellowship position to work at the <a href="#">Aga Khan School</a> in <a href="#">Mombasa, Kenya</a>. The fellowship was cancelled, so Downey moved home and sought other opportunities to travel and live abroad. In February 2013, she travelled to <a href="#">Seosan, South Korea</a> to live and study <a href="#">Kouk Sun Do</a> with Master Hyunmoon Kim for 4 months. She wanted to explore Eastern conceptions of the body through experiential learning, and though it was foundational to her personally, she ultimately found herself much more engaged by neuroscience literature than the mystic approach to understanding the body, health, and life.
+            </p>
+
+            <!-- CAROUSEL 6 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Seosan, South Korea — Kouk Sun Do with Master Hyunmoon Kim</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="sk_sundo.jpg"></div>
+                            <div class="carousel-slide"><img src="sk_tea.jpg"></div>
+                            <div class="carousel-slide"><img src="sk_students.jpg"></div>
+                            <div class="carousel-slide"><img src="sk_gardens.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <!-- ══ PROFESSIONAL CAREER ══ -->
+            <h2 id="career">Professional career and detours <span class="mw-editsection">[<a href="#">edit</a>]</span></h2>
+
+            <h3 id="service-industry">Service industry (2004–2025) <span class="mw-editsection">[<a href="#">edit</a>]</span></h3>
+            <p>
+                Downey began her career in the service industry at fourteen, working at the Estes family's ice cream and candy shop, Candy Go Nuts, as a summer job. By sixteen, she was bussing tables and dishwashing at <a href="#">Landfall Restaurant</a> in <a href="#">Woods Hole</a>, where she learned the value of hard work, and treating all people with respect, especially those who are young and new. She worked at Landfall on and off for 12 years total, primarily as a waitress. While a lot of fun, she also gained invaluable lessons from working in the service industry. Her favorite thing to do was to win over customers who arrived to the waterfront restaurant grouchy and rude. After Landfall, Downey intermittently worked parttime in several other restaurants in Woods Hole and Cambridge for extra savings and/or spending money and for fun.
+            </p>
+
+            <!-- CAROUSEL 7 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Landfall Restaurant, Woods Hole — service industry years</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="LF_cuties.jpg"></div>
+                            <div class="carousel-slide"><img src="LF_outside.jpg"></div>
+                            <div class="carousel-slide"><img src="quicks.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <h3 id="mbl">Marine Biological Laboratory (2014–2016) <span class="mw-editsection">[<a href="#">edit</a>]</span></h3>
+            <p>
+                From April 2014 to November 2016, Downey worked at the Bay Paul Center for Evolutionary Biology at the <a href="#">Marine Biological Laboratory</a> (MBL) as Research Assistant. She served as a microbial genetic sequencing technician in that time, and worked on projects studying microbiomes in the deep sea and deep ice, sewage, and in the human mouth and gut. She loved learning about genetic sequencing and study protocols and being part of the scientific community, but her passion lay with working with and for people, which was something few at MBL had in common with her. During those years, she spent a lot of time studying for the <a href="#">MCAT</a> and listening to Taylor Swift, Beyoncé, and Justin Bieber. She also lived at the <a href="#">Woods Hole Inn</a> as an off-season, off-hours innkeeper, which made her commute to MBL a whopping 2 minutes.
+            </p>
+
+            <!-- CAROUSEL 8 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Marine Biological Laboratory — Bay Paul Center, Woods Hole Inn, the commute</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="mbl_view.jpg"></div>
+                            <div class="carousel-slide"><img src="mbl_coworkers.jpg"></div>
+                            <div class="carousel-slide"><img src="mbl_rachel.jpg"></div>
+                            <div class="carousel-slide"><img src="eel_pond.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <h3 id="habs">Harvard Aging Brain Study (2016–2018) <span class="mw-editsection">[<a href="#">edit</a>]</span></h3>
+            <p>
+                Downey was delighted to get out of bench lab work and transition to a Clinical Research Coordinator for the <a href="#">Harvard Aging Brain Study</a> (HABS) at <a href="#">MGH</a> in 2016. She moved to <a href="#">Cambridge, MA</a>. HABS was a longitudinal study tracing cognitive changes and neurodegeneration in healthy older adults in order to understand the pathology of <a href="#">Alzheimer's Disease</a> and other dementias. In this role, she got to participate in study recruitment of older adults (her favorite population), and conducted study activities with participants such as neuropsychological and cognitive tests and MRI brain scans. During that time, Downey got waitlisted at medical school across two cycles, which was both hopeful and deflating.
+            </p>
+
+            <!-- CAROUSEL 9 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Harvard Aging Brain Study — MGH, Cambridge, MA</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="mri_shoes.jpg"></div>
+                            <div class="carousel-slide"><img src="mgh_aaic.jpg"></div>
+                            <div class="carousel-slide"><img src="mgh_brain.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <h3 id="cogniciti">Cogniciti (2018–2019) <span class="mw-editsection">[<a href="#">edit</a>]</span></h3>
+            <p>
+                In a wild turn of events, Downey's colleague got recruited for an industry start-up and handed the phone to Downey while they were in the office. The start-up was Cogniciti, a Toronto-based company which aimed to spread nationally to recruit patients for Alzheimer's Clinical Trials (aducanumab, donepezil, etc.). Downey was an early hire and began hosting brain health workshops around Eastern Massachusetts, but quickly became the manager of an international team of 9 specialists across the U.S. and Canada. Downey was accepted to a few DO programs but opted not to attend, realizing that she could play different and important roles in healthcare outside of being a physician. Cogniciti folded in September 2019 and Downey began collecting unemployment and baking her own granola while applying to jobs and living in Somerville, MA.
+            </p>
+
+            <!-- CAROUSEL 10 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Cogniciti — brain health workshops, the team, the granola era</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="toronto.jpg"></div>
+                            <div class="carousel-slide"><img src="cog_group.jpg"></div>
+                            <div class="carousel-slide"><img src="cog_mice.jpg"></div>
+                            <div class="carousel-slide"><img src="tiggy.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <h3 id="ariadne">Ariadne Labs: 2020–present <span class="mw-editsection">[<a href="#">edit</a>]</span></h3>
+            <p>
+                On unemployment, Ariadne Labs careers page was one of the first places she looked. She was hyped to see the opening for a Project Manager, Serious Illness Care Program as she had followed <a href="#">Atul Gawande</a>'s work since the publication of <i><a href="#">Being Mortal</a></i>. The book resonated deeply with what she had experienced with her grandmother's beautiful end of life at home on hospice, and also relayed the bright spots and shortcomings she had seen in the long-term care system with her other grandparents and as a hospice volunteer.
+            </p>
+
+            <!-- CAROUSEL 11 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Ariadne Labs — Serious Illness Care Program, Being Mortal, the team</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="landmark.jpg"></div>
+                            <div class="carousel-slide"><img src="mcgill2.jpg"></div>
+                            <div class="carousel-slide"><img src="al_stickies.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <p>
+                The <a href="#">COVID-19 pandemic</a> catalyzed the rapid transition to remote work just six weeks into Downey's new role at Ariadne. Her tenure therefore began with a series of adaptations of the Serious Illness Conversation Guide for the context of COVID-19 care. Other project highlights at the lab included leading the SICP Community of Practice, and managing a four-year initiative to digitize the Serious Illness Care Program health systems implementation package and Serious Illness Conversation Guide Training. In recent years at Ariadne, Downey's clinical research came full circle when she began working on Essential Communications for Dementia Care and the Living Well with Dementia Toolkit projects.
+            </p>
+            <p>
+                In addition to a deep commitment to the mission of the work, and genuine enthusiasm for the innovative and human-centered approaches employed at the lab, Downey is most delighted by her coworkers who are just top notch humans. In 2022 Downey moved back to Woods Hole, and now commutes by bus to Ariadne once a week.
+            </p>
+
+            <!-- CAROUSEL 12 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Woods Hole, the bus commute, and back home</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="nobska.jpg"></div>
+                            <div class="carousel-slide"><img src="bus.jpg"></div>
+                            <div class="carousel-slide"><img src="eel_pond2.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <!-- ══ GEMS ══ -->
+            <h2 id="gems">Professional development: Master of Science in Strategic Design for Global Leadership (2025–2027) <span class="mw-editsection">[<a href="#">edit</a>]</span></h2>
+            <p>
+                Through working at the lab, Downey discovered human centered design and was inspired to begin her Masters degree at <a href="#">Parsons School of Design</a> as a member of the 10th Global Executive Management cohort in Strategic Design for Global Leadership (GEMS). The GEMS program has been nothing short of transformative. She is expected to graduate in May 2027.
+            </p>
+            <p>
+                The GEMS program includes intensive in person sessions, including 6 in <a href="#">Paris, France</a>, 1 in <a href="#">New York City</a>, United States, 1 in <a href="#">Copenhagen, Denmark</a>, and 1 in <a href="#">Seoul, South Korea</a>. The focus of Downey's independent study on promoting healthy and well balanced relationships through improved conversations about sex, sexuality, and bodies, through a series of workshops in her community. Eventually, she might end up opening a feminist, sex positive bookstore in Falmouth that doubles as a pizza-slices joint (to make it a welcoming space for men and women, boys, and girls). Stay tuned! But don't hold your breath!
+            </p>
+
+            <!-- CAROUSEL 13 -->
+            <div class="photo-carousel" data-carousel>
+                <div class="carousel-wrapper">
+                    <div class="carousel-label">📷 Parsons GEMS — Paris, Copenhagen, Seoul, New York</div>
+                    <div class="carousel-inner">
+                        <button class="carousel-btn prev-btn">&#8249;</button>
+                        <div class="carousel-viewport"><div class="carousel-track">
+                            <div class="carousel-slide"><img src="gems_group.jpg"></div>
+                            <div class="carousel-slide"><img src="gems_cheese.jpg"></div>
+                            <div class="carousel-slide"><img src="gems_tower.jpg"></div>
+                            <div class="carousel-slide"><img src="gems_silly.jpg"></div>
+                        </div></div>
+                        <button class="carousel-btn next-btn">&#8250;</button>
+                    </div>
+                    <div class="carousel-footer"><div class="carousel-dots"></div><span class="carousel-counter"></span></div>
+                </div>
+            </div>
+
+            <!-- ══ REFERENCES ══ -->
+            <h2 id="references">References <span class="mw-editsection">[<a href="#">edit</a>]</span></h2>
+            <div class="references">
+                <ol>
+                    <li id="ref1">Ariadne Labs. "<a href="#">Serious Illness Care Program</a>". <i>ariadnelabs.org</i>. Retrieved 2025.</li>
+                    <li id="ref2">O'Donnell family records. Private correspondence, Falmouth, Massachusetts. 2011.</li>
+                    <li id="ref3">Falmouth Public Schools. "<a href="#">About</a>". <i>falmouth.k12.ma.us</i>. Retrieved 2025.</li>
+                    <li id="ref4">School of International Training. "<a href="#">Multiculturalism and Human Rights — South Africa</a>". <i>sit.edu</i>. Retrieved 2025.</li>
+                    <li id="ref5">Kouk Sun Do International. "<a href="#">About Kouk Sun Do</a>". Retrieved 2025.</li>
+                    <li id="ref6">Landfall Restaurant. "<a href="#">About</a>". <i>woodshole.com</i>. Retrieved 2025.</li>
+                    <li id="ref7">Marine Biological Laboratory. "<a href="#">Bay Paul Center</a>". <i>mbl.edu</i>. Retrieved 2025.</li>
+                    <li id="ref8">Sperling, R.A. et al. "<a href="#">Harvard Aging Brain Study: Dataset and accessibility</a>". <i>NeuroImage: Clinical</i>. 2023.</li>
+                    <li id="ref9">Cogniciti Inc. Company records. Toronto, ON. 2018–2019.</li>
+                    <li id="ref10">Gawande, A. <i>Being Mortal: Medicine and What Matters in the End</i>. Metropolitan Books, 2014.</li>
+                    <li id="ref11">Parsons School of Design. "<a href="#">GEMS Program</a>". <i>newschool.edu</i>. Retrieved 2025.</li>
+                </ol>
+            </div>
+
+            <!-- ══ EXTERNAL LINKS ══ -->
+            <h2 id="external-links">External links <span class="mw-editsection">[<a href="#">edit</a>]</span></h2>
+            <ul style="padding-left:22px; line-height:2.1; font-family:sans-serif; font-size:93%;">
+                <li><a href="#">Ariadne Labs — Serious Illness Care Program</a></li>
+                <li><a href="#">Marine Biological Laboratory, Woods Hole</a></li>
+                <li><a href="#">Harvard Aging Brain Study — MGH</a></li>
+                <li><a href="#">School of International Training (SIT)</a></li>
+                <li><a href="#">Kouk Sun Do International</a></li>
+                <li><a href="#">Parsons School of Design — GEMS Program</a></li>
+            </ul>
+
+        </div><!-- /mw-body-content -->
+
+        <!-- CATEGORIES -->
+        <div id="catlinks">
+            <div class="mw-normal-catlinks">
+                <strong>Categories:</strong>
+                <ul>
+                    <li><a href="#">1989 births</a></li>
+                    <li><a href="#">Living people</a></li>
+                    <li><a href="#">American healthcare professionals</a></li>
+                    <li><a href="#">American clinical researchers</a></li>
+                    <li><a href="#">Palliative care advocates</a></li>
+                    <li><a href="#">Alzheimer's disease researchers</a></li>
+                    <li><a href="#">UMass Amherst alumni</a></li>
+                    <li><a href="#">People from Falmouth, Massachusetts</a></li>
+                    <li><a href="#">Cape Cod people</a></li>
+                    <li><a href="#">Ariadne Labs people</a></li>
+                    <li><a href="#">Parsons School of Design students</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!-- /content -->
+</div><!-- /main-wrap -->
+
+<!-- FOOTER -->
+<footer id="footer">
+    <ul>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">About Wikipedia</a></li>
+        <li><a href="#">Disclaimers</a></li>
+        <li><a href="#">Contact Wikipedia</a></li>
+        <li><a href="#">Code of Conduct</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Cookie statement</a></li>
+        <li><a href="#">Mobile view</a></li>
+    </ul>
+    <div>
+        This page was last edited on 6 June 2025. Text is available under the
+        <a href="#">Creative Commons Attribution-ShareAlike License 4.0</a>;
+        additional terms may apply.
+    </div>
+</footer>
+
+<script>
+// ═══════════════════════════════════════════
+// CAROUSEL
+// ═══════════════════════════════════════════
+const allCarousels = [];
+
+class WikiCarousel {
+    constructor(el) {
+        this.el       = el;
+        this.track    = el.querySelector('.carousel-track');
+        this.slides   = Array.from(el.querySelectorAll('.carousel-slide'));
+        this.prevBtn  = el.querySelector('.prev-btn');
+        this.nextBtn  = el.querySelector('.next-btn');
+        this.dotsWrap = el.querySelector('.carousel-dots');
+        this.counter  = el.querySelector('.carousel-counter');
+        this.current  = 0;
+        this._slideW  = 0;
+
+        this._build();
+        this._bindSlideClicks();
+
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => this._build(), 120);
+        });
+
+        this.prevBtn.addEventListener('click', () => this._go(this.current - 1));
+        this.nextBtn.addEventListener('click', () => this._go(this.current + 1));
+    }
+
+    get _vis() { return window.innerWidth < 600 ? 1 : 3; }
+    get _max() { return Math.max(0, this.slides.length - this._vis); }
+
+    _build() {
+        this.current = Math.min(this.current, this._max);
+        const gap = 8;
+        const vp  = this.el.querySelector('.carousel-viewport');
+        const w   = (vp.offsetWidth - gap * (this._vis - 1)) / this._vis;
+        this.slides.forEach(s => s.style.width = w + 'px');
+        this._slideW = w + gap;
+
+        this.dotsWrap.innerHTML = '';
+        for (let i = 0; i <= this._max; i++) {
+            const d = document.createElement('span');
+            d.className = 'carousel-dot';
+            d.addEventListener('click', () => this._go(i));
+            this.dotsWrap.appendChild(d);
+        }
+        this._render();
+    }
+
+    _bindSlideClicks() {
+        this.slides.forEach((slide, i) => {
+            slide.addEventListener('click', () => openLightbox(this, i));
+        });
+    }
+
+    _go(i) {
+        this.current = Math.max(0, Math.min(i, this._max));
+        this._render();
+    }
+
+    _render() {
+        this.track.style.transform = `translateX(-${this.current * this._slideW}px)`;
+        this.dotsWrap.querySelectorAll('.carousel-dot').forEach((d, i) =>
+            d.classList.toggle('active', i === this.current));
+        const last = Math.min(this.current + this._vis, this.slides.length);
+        if (this.counter)
+            this.counter.textContent = `${this.current + 1}–${last} / ${this.slides.length}`;
+        this.prevBtn.disabled = this.current === 0;
+        this.nextBtn.disabled = this.current >= this._max;
+    }
+}
+
+document.querySelectorAll('[data-carousel]').forEach(el => allCarousels.push(new WikiCarousel(el)));
+
+// ═══════════════════════════════════════════
+// LIGHTBOX
+// ═══════════════════════════════════════════
+let lbCarousel = null;
+let lbIndex    = 0;
+
+const lightbox      = document.getElementById('lightbox');
+const lbBackdrop    = document.getElementById('lb-backdrop');
+const lbImg         = document.getElementById('lb-img');
+const lbPlaceholder = document.getElementById('lb-placeholder');
+const lbPrev        = document.getElementById('lb-prev');
+const lbNext        = document.getElementById('lb-next');
+const lbClose       = document.getElementById('lb-close');
+const lbCounter     = document.getElementById('lb-counter');
+const lbPhNum       = lbPlaceholder.querySelector('.lb-ph-num');
+
+function openLightbox(carousel, index) {
+    lbCarousel = carousel;
+    lbIndex    = index;
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    renderLightbox();
+}
+
+function renderLightbox() {
+    const slide = lbCarousel.slides[lbIndex];
+    const img   = slide.querySelector('img');
+
+    if (img) {
+        lbImg.src                   = img.src;
+        lbImg.style.display         = 'block';
+        lbPlaceholder.style.display = 'none';
+    } else {
+        lbImg.style.display         = 'none';
+        lbPlaceholder.style.display = 'flex';
+        lbPhNum.textContent = `Photo ${lbIndex + 1} of ${lbCarousel.slides.length}`;
+    }
+
+    lbPrev.disabled = lbIndex === 0;
+    lbNext.disabled = lbIndex >= lbCarousel.slides.length - 1;
+    lbCounter.textContent = `${lbIndex + 1} / ${lbCarousel.slides.length}`;
+}
+
+function closeLightbox() {
+    lightbox.style.display       = 'none';
+    document.body.style.overflow = '';
+    lbImg.src  = '';
+    lbCarousel = null;
+}
+
+lbPrev.addEventListener('click', e => { e.stopPropagation(); if (lbIndex > 0) { lbIndex--; renderLightbox(); } });
+lbNext.addEventListener('click', e => { e.stopPropagation(); if (lbIndex < lbCarousel.slides.length - 1) { lbIndex++; renderLightbox(); } });
+lbClose.addEventListener('click', e => { e.stopPropagation(); closeLightbox(); });
+lbBackdrop.addEventListener('click', closeLightbox);
+
+document.addEventListener('keydown', e => {
+    if (lightbox.style.display !== 'flex') return;
+    if (e.key === 'Escape')       { closeLightbox(); return; }
+    if (e.key === 'ArrowLeft'  && lbIndex > 0)                             { lbIndex--; renderLightbox(); }
+    if (e.key === 'ArrowRight' && lbIndex < lbCarousel.slides.length - 1) { lbIndex++; renderLightbox(); }
+});
+
+// ═══════════════════════════════════════════
+// TOC TOGGLE
+// ═══════════════════════════════════════════
+const tocToggle = document.getElementById('toc-toggle');
+const tocList   = document.getElementById('toc-list');
+tocToggle.addEventListener('click', () => {
+    const hidden = tocList.style.display === 'none';
+    tocList.style.display = hidden ? '' : 'none';
+    tocToggle.textContent = hidden ? '[hide]' : '[show]';
+});
+
+// ═══════════════════════════════════════════
+// SMOOTH SCROLL
+// ═══════════════════════════════════════════
+document.querySelectorAll('#toc-list a').forEach(a => {
+    a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+});
+</script>
+
+</body>
+</html>
